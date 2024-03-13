@@ -2,7 +2,7 @@ import "react-native-gesture-handler";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import Routes from "./src/router";
-import { useFonts, Anton_400Regular } from "@expo-google-fonts/anton";
+import { useFonts, Anton_400Regular,} from "@expo-google-fonts/anton";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -10,6 +10,7 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
+    return;
   }
 
   return (
