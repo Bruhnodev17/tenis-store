@@ -8,8 +8,12 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Shoes from "../../components/Shoes";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Home() {
+
+  const navigation = useNavigation()
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -36,13 +40,13 @@ export default function Home() {
       <ScrollView>
         <Text style={styles.text}>LANÇAMENTOS</Text>
         
-        <View style={{flexDirection: "row", justifyContent: "space-around", margin:20}}>
+        <View style={{flexDirection: "row", justifyContent: "space-around", margin:20}} >
 
-            <Shoes img={require("../../assets/1.png")} cost="R$140,00">
+            <Shoes img={require("../../assets/1.png")} cost="R$140,00" onClick={() => navigation.navigate("Detail") }>
               Nike Air Max 90
             </Shoes>
 
-            <Shoes img={require("../../assets/2.png")} cost="R$280,00">
+            <Shoes img={require("../../assets/2.png")} cost="R$280,00" onClick={() => navigation.navigate("Detail") }>
               Nike Downshifter 10
             </Shoes>
        </View>

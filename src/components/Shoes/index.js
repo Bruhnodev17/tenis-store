@@ -12,7 +12,7 @@ export default function Shoes(props) {
 
   return (
     <View>
-      <TouchableOpacity style={styles.container}>
+      <TouchableOpacity style={styles.container} onPress={props.onClick}>
         <Image source={props.img} style={styles.shoesImg} />
         <Text style={styles.shoesText}>{filterDesc(props.children)}</Text>
         <View opacity={0.4}>
