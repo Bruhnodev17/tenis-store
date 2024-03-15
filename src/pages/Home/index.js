@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import Shoes from "../../components/Shoes";
 
 export default function Home() {
   return (
@@ -31,6 +32,19 @@ export default function Home() {
       </View>
 
       <View style={styles.line}/>
+
+      <ScrollView>
+        <Text style={styles.text}>LANÇAMENTOS</Text>
+        
+        <View style={{flexDirection: "row", justifyContent: "space-around"}}>
+
+          <View>
+            <Shoes/>
+            <Shoes/>
+          </View>
+
+        </View>
+      </ScrollView>
 
     </View>
   );
@@ -61,5 +75,6 @@ const styles = StyleSheet.create({
   line:{
     borderBottomColor: "#d8d8d8",
     borderBottomWidth: 2
-  }
+  },
+  
 });
