@@ -36,12 +36,13 @@ export default function Home() {
       <ScrollView>
         <Text style={styles.text}>LANÇAMENTOS</Text>
         
-        <View style={{flexDirection: "row", justifyContent: "space-around"}}>
+        <View style={{flexDirection: "row", justifyContent: "space-around", margin:20}}>
 
-          <View>
-            <Shoes/>
-            <Shoes/>
-          </View>
+            <Shoes img={require("../../assets/2.png")} cost="R$140,00">
+              Nike Air Max 90
+            </Shoes>
+            
+            
 
         </View>
       </ScrollView>
