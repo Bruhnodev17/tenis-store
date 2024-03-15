@@ -38,8 +38,11 @@ export default function Home() {
         
         <View style={{flexDirection: "row", justifyContent: "space-around", margin:20}}>
 
-            <Shoes img={require("../../assets/2.png")} cost="R$140,00">
+            <Shoes img={require("../../assets/1.png")} cost="R$140,00">
               Nike Air Max 90
+            </Shoes>
+            <Shoes img={require("../../assets/2.png")} cost="R$280,00">
+              Nike Downshifter 10
             </Shoes>
             
             

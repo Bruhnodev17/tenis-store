@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 
-export default function Shoes() {
+export default function Shoes(props) {
 
     function filterDesc(desc) {
         if (desc.length < 22) {
@@ -13,10 +13,10 @@ export default function Shoes() {
   return (
     <View>
       <TouchableOpacity style={styles.container}>
-        <Image source={require("../../assets/1.png")} style={styles.shoesImg} />
-        <Text style={styles.shoesText}>{filterDesc("Nike Air Max Pro 2017")}</Text>
+        <Image source={props.img} style={styles.shoesImg} />
+        <Text style={styles.shoesText}>{filterDesc(props.children)}</Text>
         <View opacity={0.4}>
-          <Text style={styles.shoesText}>R$190</Text>
+          <Text style={styles.shoesText}>{props.cost}</Text>
         </View>
       </TouchableOpacity>
     </View>
