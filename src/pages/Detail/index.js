@@ -21,16 +21,34 @@ export default function Detail({ navigation }) {
       />
 
       <View>
+
         <View>
-          <Text style={[styles.title, { fontSize: 24 }]}>R$ 280</Text>
+          <Text style={[styles.title, { fontSize: 24 }]}>R$ 280,90</Text>
         </View>
+
+        <View opacity={0.4}>
+          <Text style={[styles.title, { fontSize: 30 }]}>Nike Downshifter 10</Text>
+        </View>
+
+        <View style={styles.dotContainer}>
+
+        </View>
+
       </View>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {},
-  image: {},
-  title: {},
+  container: {
+    flex: 1,
+    width: "100%",
+    backgroundColor: "#FFF"
+  },
+  image: {
+    width: "100%"
+  },
+  title: {
+    fontFamily: "Anton_400Regular"
+  },
 });
