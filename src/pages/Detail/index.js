@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from "react-native";
+import Dot from "../../components/Dot";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
@@ -31,7 +32,10 @@ export default function Detail({ navigation }) {
         </View>
 
         <View style={styles.dotContainer}>
-
+          <Dot color="#2379f4"/>
+          <Dot color="#fb6e53"/>
+          <Dot color="#ddd"/>
+          <Dot color="#000"/>
         </View>
 
       </View>
@@ -49,6 +53,11 @@ const styles = StyleSheet.create({
     width: "100%"
   },
   title: {
-    fontFamily: "Anton_400Regular"
+    fontFamily: "Anton_400Regular",
+    paddingHorizontal: "2%"
   },
+  dotContainer:{
+    flexDirection: "row",
+    marginVertical: "7%"
+  }
 });
