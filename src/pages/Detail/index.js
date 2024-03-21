@@ -40,8 +40,11 @@ export default function Detail({ navigation }) {
         </View>
 
         <View style={{flexDirection: "row", width: "100%"}}>
-          <ScrollView>
-            <SizeButton/>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            <SizeButton bgColor="#17181a" color="#FFF">42</SizeButton>
+            <SizeButton>40</SizeButton>
+            <SizeButton>38</SizeButton>
+            <SizeButton>36</SizeButton>
           </ScrollView>
         </View>
 
