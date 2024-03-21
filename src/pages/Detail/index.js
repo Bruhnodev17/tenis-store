@@ -7,6 +7,7 @@ import {
   StyleSheet,
 } from "react-native";
 import Dot from "../../components/Dot";
+import SizeButton from "../../components/SizeButton";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
@@ -36,6 +37,12 @@ export default function Detail({ navigation }) {
           <Dot color="#fb6e53"/>
           <Dot color="#ddd"/>
           <Dot color="#000"/>
+        </View>
+
+        <View style={{flexDirection: "row", width: "100%"}}>
+          <ScrollView>
+            <SizeButton/>
+          </ScrollView>
         </View>
 
       </View>
