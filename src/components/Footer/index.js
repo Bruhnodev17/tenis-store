@@ -9,7 +9,17 @@ export default function Footer() {
         <View style={{flexDirection: "row"}}>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 <View style={{marginHorizontal:10}}>
-                    <Shoes img={require("../../assets/1.png")} cost="140,00">
+                    <Shoes img={require("../../assets/1.png")} cost="R$ 140,00">
+                        Nike Air Max 90
+                    </Shoes>
+                </View>
+                <View style={{marginHorizontal:10}}>
+                    <Shoes img={require("../../assets/3.png")} cost=" R$ 560,90">
+                        Nike Air Max 90
+                    </Shoes>
+                </View>
+                <View style={{marginHorizontal:10}}>
+                    <Shoes img={require("../../assets/4.png")} cost="R$ 220,00">
                         Nike Air Max 90
                     </Shoes>
                 </View>
@@ -20,5 +30,10 @@ export default function Footer() {
 }
 
 const styles = StyleSheet.create({
-
+    title:{
+        fontSize: 24,
+        fontFamily: "Anton_400Regular",
+        marginVertical:"2%",
+        paddingHorizontal: "2%"
+    }
 })
