@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import Dot from "../../components/Dot";
 import SizeButton from "../../components/SizeButton";
+import Button from "../../components/Button";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
@@ -67,6 +68,10 @@ export default function Detail({ navigation }) {
 
         </View>
 
+        < Button />
+
+        <View style={styles.line}/>
+
       </View>
     </ScrollView>
   );
@@ -98,7 +103,8 @@ const styles = StyleSheet.create({
   textTitle:{
     fontSize: 22,
     lineHeight: 25,
-    marginVertical: "2%"
+    marginVertical: "2%",
+    fontWeight: "bold"
   },
   textList:{
     fontSize: 16,
