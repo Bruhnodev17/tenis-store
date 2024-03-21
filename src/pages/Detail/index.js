@@ -9,6 +9,7 @@ import {
 import Dot from "../../components/Dot";
 import SizeButton from "../../components/SizeButton";
 import Button from "../../components/Button";
+import Footer from "../../components/Footer";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
@@ -72,6 +73,8 @@ export default function Detail({ navigation }) {
 
         <View style={styles.line}/>
 
+        <Footer />
+
       </View>
     </ScrollView>
   );
@@ -110,5 +113,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 25,
     marginHorizontal: "3%",
+  },
+  line:{
+    borderWidth: 1,
+    borderBottomColor: "#ddd",
+    marginVertical: "2%"
   }
 });
